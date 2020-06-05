@@ -7,9 +7,176 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Sacramento&display=swap" rel="stylesheet">
-</head>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <style media="screen">
+    body {
+      margin: 0;
+      text-align: center;
+      font-family: 'Merriweather', serif;
+    }
 
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: 'Sacramento', cursive;
+      font-size: 80px;
+      color: #66BFBF;
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 40px;
+      color: #66BFBF;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      color: #11999E;
+      margin-top: 10px;
+    }
+
+    a {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      color: #11999E;
+      margin: auto 10px;
+    }
+
+    p {
+      color: #40514E;
+      font-weight: bold;
+    }
+
+    hr {
+      border-style: none;
+      border-top-style: dotted;
+      border-color: grey;
+      border-width: 7px;
+      margin: 50px auto;
+      width: 5%
+    }
+
+    .profile {
+      width: 50%;
+      margin: 0 auto;
+      line-height: 2;
+    }
+
+    .skill-row {
+      width: 50%;
+      margin: 100px auto;
+      text-align: left;
+      line-height: 2;
+    }
+
+    .contact-me {
+      width: 50%;
+      margin: 0 auto;
+      line-height: 2;
+    }
+
+    .top-container {
+      background-color: #E4F9F5;
+      position: relative;
+      padding-top: 100px;
+    }
+
+    .middle-container {
+      position: relative;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .bottom-container {
+      background-color: #E4F9F5;
+      position: relative;
+      padding-top: 25px;
+      margin-bottom: 0;
+      overflow: hidden;
+    }
+
+    .top-cloud {
+      background-color: #E4F9F5;
+      height: 100px;
+      width: 150px;
+      position: absolute;
+      right: 100px;
+      top: 70px;
+    }
+
+    .bottom-cloud {
+      background-color: #E4F9F5;
+      height: 100px;
+      width: 150px;
+      position: absolute;
+      bottom: 200px;
+      left: 150px;
+    }
+
+    .profile-picture {
+      border-radius: 100%;
+    }
+
+    .python-image {
+      height: 100px;
+      width: 100px;
+      float: left;
+      margin-right: 30px;
+    }
+
+    .flutter-image {
+      border-radius: 100%;
+      height: 100px;
+      width: 100px;
+      float: right;
+      margin-left: 30px;
+    }
+
+    .navbar-logo {
+      border-radius: 100%;
+    }
+
+  .navbar{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  </style>
+</head>
 <body>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light" style="background-color: #E4F9F5">
+    <a class="navbar-brand" href="#">
+      <img class="navbar-logo" src="images/navbar-logo.png" alt="Hey!" width="60px" height="60px" border-radius=100%>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><strong>About</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><strong>Experience</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><strong>Projects</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><strong>Skills</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><strong>Contact</strong></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <div class="top-container">
     <img class="top-cloud" src="https://freesvg.org/img/Happy_Cloud.png" alt="Cloud-Image">
     <h1>Aashay Shah</h1>
@@ -43,15 +210,11 @@
       <a class="btn" href="mailto:aashay.shah@somaiya.edu">CONTACT ME</a>
     </div>
   </div>
-
-
   <div class="bottom-container">
     <a class="footer-link" href="https://www.linkedin.com/in/aashay-shah-5b236215b/">LinkedIn</a>
     <a class="footer-link" href="https://github.com/aashayshah160499">Github</a>
     <a class="footer-link" href="https://www.hackerrank.com/aashay_shah">Hackerrank</a>
     <p>© 2020 Aashay Shah</p>
   </div>
-
 </body>
-
 </html>

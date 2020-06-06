@@ -163,8 +163,10 @@ hr {
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   color: #0A97B0;
+  padding-bottom: 20px;
 }
 
 .about-p{
   color: #0A97B0;
+  font-style: normal;
 }

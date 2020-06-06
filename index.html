@@ -17,6 +17,7 @@
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg sticky-top navbar-light" style="background-color: #E4F9F5">
     <a class="navbar-brand" href="#">
@@ -129,6 +130,32 @@
 
   <div id="certification" class="certification">
     <h2 class="certification-h2"><strong>Certifications</strong></h2>
+    <div class="container">
+      <div id="carousel-certification" class="carousel slide" data-ride="carousel" data-pause="hover" data-interval="3000">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-certification" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-certification" data-slide-to="1"></li>
+          <li data-target="#carousel-certification" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="certi-image" src="images/Certi1.PNG" class="d-block w-100" alt="IBM Data Science">
+          </div>
+          <div class="carousel-item">
+            <img class="certi-image" src="images/Certi2.PNG" class="d-block w-100" alt="Python Specialization">
+          </div>
+          <div class="carousel-item">
+            <img class="certi-image" src="images/Certi3.PNG" class="d-block w-100" alt="TCS iON">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-certification" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-certification" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
   </div>
 
   <div class="middle-container">
@@ -146,4 +173,5 @@
     <p>© 2020 Aashay Shah</p>
   </div>
 </body>
+
 </html>
